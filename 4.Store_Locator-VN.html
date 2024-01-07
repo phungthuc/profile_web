@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Định Vị Cửa Hàng</title>
+    <link rel="stylesheet" href="./css/bootstrap_4.3.1_css_bootstrap.min.css">
+    <!--Library reference: Slide-->
+    <link rel="stylesheet" href="./css/animate.css_v3.1.0_animate.min.css">
+    <!--Library reference: icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <!--layout design-->
+    <link rel="stylesheet" href="./css/Layout.css">
+    <!--Library reference: Top-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <!--Library reference: Slide-->
+    <script src="./JavaScript And Jquery And Bootstrap/WOW_1.0.1_dist_wow.min.js"></script>
+    <!--Scroll To ID------------------>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <!-------------->
+    <!--Library reference: required-->
+    <script src="./JavaScript And Jquery And Bootstrap/jquery_3.4.1_jquery.min.js"></script>
+    <!--Library reference: required-->
+    <script src="./JavaScript And Jquery And Bootstrap/jav_1.14.7_umd_popper.min.js"></script>
+    <!--Library reference: required-->
+    <script src="./JavaScript And Jquery And Bootstrap/bootstrap_4.3.1_js_bootstrap.min.js"></script>
+    <!--------------------------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!------------------------------------------------------Language and Sign in------------------------------------------------------>
+        <div class="row" style="margin: 20px;">
+            <!--Language-->
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+                <button class="btn btn-light" type="button" id="dropdownMenuButton">
+                    <img src="./Image/homepage/2.svg" alt="" width="15px"><a href="./0.Welcome.html"> Việt Nam</a>
+                </button>
+            </div>
+            <!--Sign in-->
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+                <button id="myBtn" class="btn btn-light sign_in">Đăng Nhập</button>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="myModal" class="modal" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <div class="modal_text">
+                                            <p class="modal_p">Đăng Nhập Tài Khoản</p>
+                                        </div>
+                                    </div>
+                                    <form action="" class="modal_f" onsubmit="return sign_in()">
+                                        <div class="form-group">
+                                            <input class="Modal_Input form-control" type="text" value=""
+                                                style="margin-top: 10px; margin-bottom: 10px;"
+                                                placeholder="Enter Your Email" id="myEmail" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="Modal_Input form-control" type="password" value=""
+                                                style="margin-top: 10px; margin-bottom: 10px;"
+                                                placeholder="Enter Your Password" id="myPass" required>
+                                        </div>
+                                        <div class="form-inline justify-content-center">
+                                            <button type="submit" id="btnLogin"
+                                                class="Modal_click form-control btn btn-light modal_input"
+                                                >Đăng Nhập</button>
+                                            <a href="./6.Register.html" style="margin-left: 30px; margin-right: 30px;">
+                                                <button class="Modal_click form-control btn btn-light modal_input"
+                                                    type="button" id="myRegistration">Đăng Ký</button></a>
+                                            <button id="myBtnClose"
+                                                class="Modal_click form-control btn btn-light modal_input" type="button"
+                                                >Đóng</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------------------------------------------------Menu And Logo------------------------------------------------------>
+        <!--logo-->
+        <div id="row-2-logo" class="row" style="height: 50px;">
+            <div class="col-xl-12" style="text-align: center;">
+                <a href="./1.Index-VN.html"><img src="./Image/general/logo.png"></a>
+            </div>
+        </div>
+        <!--menu-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" style="margin-top: 80px;">
+            <button id="btn-nav" class="navbar-toggle" type="button" data-toggle="collapse"
+                data-target="#collapse1">&#9776;</button>
+            <div class="collapse navbar-collapse" id="collapse1">
+                <ul class="navbar-nav">
+                    <li class="nav-item" style="padding-right: 30px;padding-left: 30px;"><a class="nav-link "
+                            href="./1.Index-VN.html">Trang Chủ</a>
+                    </li>
+                    <li class="nav-item dropdown product-nav" style="padding-right: 30px;padding-left: 30px;">
+                        <a class="nav-link dropdown-toggle" href="./2.Products-VN.html">Sản Phẩm</a>
+                        <ul class="dropdown-menu">
+                            <!--Products Quartz-->
+                            <li class="dropright">
+                                <a class="dropdown-toggle" href="./2.Products-VN.html">Đồng Hồ
+                                    Pin</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item"><a href="./Products-Q-1-VN.html">Aura
+                                            White Watch</a></li>
+                                    <li class="dropdown-item"><a href="./Products-Q-2-VN.html">Aura
+                                            Embossed Watch</a></li>
+                                    <li class="dropdown-item"><a href="./Products-Q-3-VN.html">Antique
+                                            Flower Watch</a></li>
+                                    <li class="dropdown-item"><a href="./Products-Q-4-VN.html">Aura
+                                            Embossed Watch</a></li>
+                                </ul>
+                            </li>
+                            <!--Products Eco-Drive-->
+                            <li class="dropright">
+                                <a class="dropdown-toggle" href="./2.Products-VN.html">Đồng Hồ Năng Lượng</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item"><a href="./Products-W-1-VN.html">Aura
+                                            White Acrylic Watch</a></li>
+                                    <li class="dropdown-item"><a href="./Products-W-2-VN.html">Butterfly
+                                            Dial Watch</a></li>
+                                    <li class="dropdown-item"><a href="./Products-W-3-VN.html">Aura
+                                            Stardust Watch</a></li>
+                                    <li class="dropdown-item"><a href="./Products-W-4-VN.html">Silver
+                                            Tone Watch</a></li>
+                                </ul>
+                            </li>
+                            <!--Products Automatic-->
+                            <li class="dropright ">
+                                <a class="dropdown-toggle" href="./2.Products-VN.html">Đồng Hồ Cơ</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item"><a href="./Products-A-1-VN.html">Aura
+                                            Glitter Watch</a></li>
+                                    <li class="dropdown-item"><a href="./Products-A-2-VN.html">Aura
+                                            Rose Tone Watch Set</a></li>
+                                    <li class="dropdown-item"><a href="./Products-A-3-VN.html">Aura
+                                            White Acrylic Watch</a></li>
+                                    <li class="dropdown-item"><a href="./Products-A-4-VN.html">Aura
+                                            Embossed Watch</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item" style="padding-right: 30px;padding-left: 30px;"><a
+                            href="./3.Technology-VN.html" class="nav-link">Công Nghệ</a></li>
+                    <li class="nav-item" style="padding-right: 30px;padding-left: 30px;"><a
+                            href="./4.Store_Locator-VN.html" class="nav-link active">Định Vị Cửa Hàng</a></li>
+                    <li class="nav-item" style="padding-right: 30px;padding-left: 30px;"><a href="./5.Support-VN.html"
+                            class="nav-link">Hỗ Trợ</a></li>
+                    <li class="nav-item" style="padding-right: 30px;padding-left: 30px;"><a href="./6.Register-VN.html"
+                            class="nav-link">Đăng Ký</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!------------------------------------------------------Link------------------------------------------------------>
+        <div class="container-fluid">
+            <ol class="breadcrumb Menu_Link">
+                <li class="breadcrumb-item"><a href="./1.Index-VN.html">Trang Chủ</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Định Vị Cửa Hàng</li>
+            </ol>
+        </div>
+        <!------------------------------------------------------------Background-image------------------------------------------------------------>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-12 d-block w-100 Menu_Background_Image">
+                    <img src="./Image/general/Hoskings_Aura_banner.jpg" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <!------------------------------------------------------------Contents------------------------------------------------------------>
+        <div class="container-fluid">
+            <div class="row" style="margin-top: 20px; margin-bottom: 30px;">
+                <div class="col">
+                    <!--Slide-->
+                    <div class="row" style=" margin-bottom: 30px;">
+                        <div class="container">
+                            <div id="my-carousel" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li class="active" data-target="#my-carousel" data-slide-to="0"
+                                        aria-current="location">
+                                    </li>
+                                    <li data-target="#my-carousel" data-slide-to="1"></li>
+                                    <li data-target="#my-carousel" data-slide-to="2"></li>
+                                    <li data-target="#my-carousel" data-slide-to="3"></li>
+                                    <li data-target="#my-carousel" data-slide-to="4"></li>
+                                    <li data-target="#my-carousel" data-slide-to="5"></li>
+                                    <li data-target="#my-carousel" data-slide-to="6"></li>
+                                    <li data-target="#my-carousel" data-slide-to="7"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="d-block w-100" src="./Image/store_locator/slide_1.jpeg" alt=""
+                                            width="1400" height="500">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="./Image/store_locator/slide_2.jpeg" alt=""
+                                            width="1400" height="500">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="./Image/store_locator/slide_3.jpeg" alt=""
+                                            width="1400" height="500">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="./Image/store_locator/slide_4.jpeg" alt=""
+                                            width="1400" height="500">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="./Image/store_locator/slide_5.jpeg" alt=""
+                                            width="1400" height="500">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="./Image/store_locator/slide_6.jpeg" alt=""
+                                            width="1400" height="500">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="./Image/store_locator/slide_7.jpeg" alt=""
+                                            width="1400" height="500">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="./Image/store_locator/slide_8.jpeg" alt=""
+                                            width="1400" height="500">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#my-carousel" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#my-carousel" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row" style=" margin-bottom: 10px;">
+                            <!--image-->
+                            <div class="col-xl-6 rounded">
+                                <img src="./Image/store_locator/store_1.jpg" class="img-fluid rounded" alt="">
+                            </div>
+                            <!--map and info-->
+                            <div class="col-xl-6 rounded" style="border: 1px solid #ccc;">
+                                <p class="register_and_support_text">Cửa Hàng</p>
+                                <center>
+                                    <hr width="50%">
+                                </center>
+                                <div class="row">
+                                    <div class="col store_locator_map">
+                                        <center><iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.7599005130855!2d105.83989091419036!3d21.002259486012655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ad389c0a12df%3A0x24aa1e437c63f4e3!2zQXB0ZWNoIEjDoCBO4buZaQ!5e0!3m2!1svi!2s!4v1571643849205!5m2!1svi!2s"
+                                                width="646" height="auto" frameborder="0" style="border:0;"
+                                                allowfullscreen=""></iframe></center>
+                                    </div>
+                                </div>
+                                <p class="register_and_support_text">Thông Tin</p>
+                                <center>
+                                    <hr width="50%">
+                                </center>
+                                <p style="color: black;">Aura Watch là một công ty trẻ có trụ sở tại Ý, nơi nó lấy cảm
+                                    hứng cho các mô hình của mình. Mỗi chiếc đồng hồ được phân biệt bởi sự chín muồi của
+                                    marbe được sử dụng từ đó việc tạo ra toàn bộ sản phẩm được sinh ra. Quay số của
+                                    chúng tôi là trung tâm của kinh doanh và chính sách của chúng tôi. Các vật liệu được
+                                    sử dụng phản ánh phong cách và văn hóa Ý, dựa trên lịch sử và nghệ thuật. Vì lý do
+                                    này, chúng tôi xem xét các sản phẩm của chúng tôi độc đáo và sáng tạo.
+                                    <br>
+                                    Aura Watch là một công ty trẻ có trụ sở tại Ý, nơi nó lấy cảm hứng cho các mô hình
+                                    của mình. Mỗi chiếc đồng hồ được phân biệt bởi sự chín muồi của marbe được sử dụng
+                                    từ đó việc tạo ra toàn bộ sản phẩm được sinh ra. Quay số của chúng tôi là trung tâm
+                                    của kinh doanh và chính sách của chúng tôi. Các vật liệu được sử dụng phản ánh phong
+                                    cách và văn hóa Ý, dựa trên lịch sử và nghệ thuật. Vì lý do này, chúng tôi xem xét
+                                    các sản phẩm của chúng tôi độc đáo và sáng tạo.
+                                    Mục tiêu của chúng tôi là để lại dấu ấn, giống như thời gian. Đó là lý do tại sao
+                                    chúng tôi tin rằng sự đơn giản kết hợp với góc phần tư sáng tạo của chúng tôi thể
+                                    hiện sự pha trộn hoàn hảo. Các vân đá cẩm thạch là vô hạn như sự kết hợp chúng tôi
+                                    sẽ đề xuất trong tương lai. Một loại đá quan trọng và thanh lịch, vật liệu chất
+                                    lượng cao và thiết kế của Ý.
+                                </p>
+                                <p class="register_and_support_text">Liên hệ</p>
+                                <center>
+                                    <hr width="50%">
+                                </center>
+                                <p class="store_locator_contents"><span><i class="fa fa-home"
+                                            aria-hidden="true"></i></span>
+                                    P.IVA
+                                    01208150258, Belluno 32100 Italy</p>
+                                <p class="store_locator_contents"><span><i class="fa fa-phone"
+                                            aria-hidden="true"></i></span>
+                                    123-123-1234567</p>
+                                <p class="store_locator_contents"><span><i class="fa fa-envelope"
+                                            aria-hidden="true"></i></span>
+                                    aurawatch@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------------------------------------------------------TopButton------------------------------------------------------------>
+        <div class='onTop'>
+            <div>
+                <p>TOP</p>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="container-fluid" style="padding-bottom:30px;">
+        <div class="row">
+            <div class="col-xl-6">
+                <div class="row" style="margin: 30px 10px;">
+                    <!--Footer Menu-->
+                    <div class="col-xl-3">
+                        <p class="text_topic">Menu</p>
+                        <hr width="30%" align="left" color="#ccc">
+                        <p class="text_contents"><a href="./1.Index-VN.html"><span>Trang Chủ</span></a><br>
+                            <a href="./2.Products-VN.html"><span>Sản Phẩm</span></a><br>
+                            <a href="./3.Technology-VN.html"><span>Công Nghệ</span></a><br>
+                            <a href="./4.Store_Locator-VN.html"><span>Định Vị Cửa Hàng</span></a><br>
+                            <a href="./5.Support-VN.html"><span>Hỗ Trợ</span></a><br>
+                            <a href="./6.Register-VN.html"><span>Đăng Ký</span></a></p>
+                    </div>
+                    <!--Footer Openning time-->
+                    <div class="col-xl-4">
+                        <p class="text_topic">Giờ Mở Cửa<br></p>
+                        <hr width="30%" align="left" color="#ccc">
+                        <p class="text_contents"><span>Thứ 2: 09:00-17:00</span><br>
+                            <span>Thứ 3: 09:00-17:00</span><br>
+                            <span>Thứ 4: 09:00-17:00</span><br>
+                            <span>Thứ 5: 09:00-17:00</span><br>
+                            <span>Thứ 6: 09:00-17:00</span><br>
+                            <span>Thứ 7: 09:00-20:00</span><br>
+                            <span>Chủ Nhật: 09:00-20:00</span></p>
+                    </div>
+                    <!--Address-->
+                    <div class="col-xl-5">
+                        <p class="text_topic">Thông Tin Cửa Hàng</p>
+                        <hr width="30%" align="left" color="#ccc">
+                        <p class="text_contents"><span><i class="fa fa-home" aria-hidden="true"></i></span> P.IVA
+                            01208150258, <br>Belluno 32100
+                            Italy</p>
+                        <p class="text_contents"><span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                            123-123-1234567</p>
+                        <p class="text_contents"><span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                            aurawatch@gmail.com</p>
+                    </div>
+                </div>
+                <div class="row" style=" margin-top: 80px;">
+                    <div class="col text_social_and_pay">
+                        <p>
+                            Mạng Xã Hội:
+                            <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-google" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-drupal" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                        </p>
+                    </div>
+                    <div class="col text_social_and_pay">
+                        <p>
+                            Thanh Toán:
+                            <a href="#"><i class="fa fa-cc-visa" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-credit-card-alt" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-cc-stripe" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-money" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-cc-jcb" aria-hidden="true"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <!--Map-->
+                <div class="row">
+                    <div class="col">
+                        <div class="footer_map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.1441076563633!2d106.67385271425717!3d10.87664206031137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529d2e3779ec3%3A0xdc988d109d58efd8!2zSOG7pyBUaeG6v3UgTcOsIEhvw6BuaCBUaMOhbmggVMOgaSBLw70!5e0!3m2!1svi!2s!4v1571969812583!5m2!1svi!2s"
+                                width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        </div>
+                    </div>
+                </div>
+                <!--Subcribe-->
+                <div class="row">
+                    <div class="col">
+                        <p style="color: white; font-size: 20px; text-align: center;">Đăng Ký Nhận Bản Tin</p>
+                        <p style="color: #ccc; font-size: 16px; text-align: center;">Theo dõi bản tin của chúng tôi để
+                            nhận thông tin mới nhất về sản phẩm mới và chiến dịch quảng cáo của chúng tôi.</p>
+                    </div>
+                </div>
+                <!--Support-->
+                <div class="row justify-content-md-center">
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <input type="email" class="form-control" value="" placeholder="Vui Lòng Nhập Email"
+                                size="40" id="my_email" />
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="form-control btn btn-info" value="Gửi Email" id="my_submit" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Copyright-->
+    <div class="container-fluid">
+        <div class="row copyright">
+            <div class="col-xl-12">
+                <p>Bản quyền &copy; 2019 Aura Watch. Tất cả quyền được bảo lưu</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--Javascript made by team-->
+<script src="./JavaScript And Jquery And Bootstrap/javascript_test.js"></script>
+<script src="./JavaScript And Jquery And Bootstrap/jquery_showroom_and_button_top.js"></script>
+
+</html>

@@ -1,0 +1,472 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*-------------------------------------------------------Layout Top-------------------------------------------------------*/
+/*--------------------------Langguage--------------------------*/
+#language {
+    z-index: 9999;
+}
+
+.sign_in {
+    float: right;
+}
+
+/*--------------------------Sign In--------------------------*/
+.modal-body {
+    background-color: black;
+    color: whitesmoke;
+    font-size: 30px;
+}
+
+.modal_p {
+    text-align: center;
+    font-size: 40px;
+}
+
+.modal_f {
+    background-color: lightgray;
+    padding: 20px;
+}
+
+.modal_input {
+    width: 80px;
+}
+
+/*--------------------------Menu--------------------------*/
+li.dropright:hover ul.dropdown-menu,
+li.nav-item:hover>ul.dropdown-menu {
+    display: block;
+}
+
+li.dropdown-item:hover,
+li.nav-item:hover,
+.dropright:hover {
+    background-color: silver;
+}
+
+.dropright {
+    padding-left: 20px;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.navbar-nav {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.nav-item {
+    padding: 0 auto;
+}
+
+ul.dropdown-menu {
+    top: 40px;
+}
+
+ul.dropdown-menu a {
+    color: black;
+}
+
+#btn-nav {
+    display: none;
+    width: 40px;
+    height: 30px;
+}
+
+a.nav-link {
+    font-size: 20px;
+}
+
+#row-2-logo {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 987px) {
+    #btn-nav {
+        display: block;
+        margin-top: 10px;
+    }
+
+    #img {
+        float: left;
+    }
+
+    #row-2-logo {
+        -webkit-box-pack: left;
+        -ms-flex-pack: left;
+        justify-content: left;
+        margin-left: 10px;
+    }
+
+    .dropdown-menu {
+        margin-top: -40px;
+        margin-left: 165px;
+    }
+}
+
+/*-------------------------------------------------------Link Part-------------------------------------------------------*/
+.Menu_Link {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/*-------------------------------------------------------Background-------------------------------------------------------*/
+.Menu_Background_Image {
+    padding: 10px 0px;
+}
+
+/*-------------------------------------------------------Contents-------------------------------------------------------*/
+.Contents_Reguster_Image {
+    width: 500px;
+}
+
+.Contents_Reguster_Form {
+    width: 450px;
+}
+
+/*--------------------------Welcome Page--------------------------*/
+.fit-image {
+    height: 100%;
+    width: 100%;
+}
+
+#my-grid {
+    margin-left: 20px;
+}
+
+.grid-padding {
+    padding: 0 8px;
+}
+
+.grid-padding img {
+    margin-bottom: 15px;
+}
+
+.grid-padding img:hover {
+    -webkit-box-shadow: 0 10px 40px 0 black;
+    box-shadow: 0 10px 40px 0 black;
+}
+
+.col-sm-4 {
+    padding-right: 40px;
+}
+
+.my-shadow {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.75);
+    -webkit-box-shadow: 0 0 10px 10px rgba(200, 200, 200, 0.75);
+    box-shadow: 0 0 10px 10px rgba(200, 200, 200, 0.75);
+    position: fixed;
+    top: 150px;
+}
+
+.welcome-contents {
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+/*--------------------------Home Page--------------------------*/
+.body_content {
+    margin: 30px 30px;
+}
+
+.body_content p {
+    font-size: 18px;
+}
+
+.body-2 p {
+    font-size: 150%;
+    font-weight: bold;
+    color: red;
+}
+
+.body-2 .card {
+    border: 1px solid #ccc;
+}
+
+.body-3 .figure {
+    border: 1px solid;
+}
+
+.body-4 .row {
+    margin: 10px 10px;
+}
+
+.body-4 p::first-letter {
+    font-size: 150%;
+}
+
+/*--------------------------Products Page--------------------------*/
+.product_line_up {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+
+.name_product {
+    font-size: 40px;
+}
+
+.code_product {
+    font-size: 12px;
+}
+
+.shipping_ViewThisProduct {
+    color: black;
+    font-size: 16px;
+}
+
+/*--------------------------Support Page--------------------------*/
+.support_map {
+    margin-bottom: 20px;
+}
+
+.support_form_and_info {
+    border: 1px solid #ccc;
+    margin: 10px 30px;
+}
+
+/*Used for register and support pages and store locator*/
+.register_and_support_text {
+    font-size: 30px;
+    margin-top: 16px;
+    text-align: center;
+}
+
+/*Block comment*/
+.support_comment {
+    resize: vertical;
+    resize: horizontal;
+}
+
+/*--------------------------Technology Page--------------------------*/
+/*Definition of the title in Technology*/
+.register_and_support_text_small {
+    font-size: 25px;
+    margin-top: 16px;
+    text-align: center;
+}
+
+/*general clock frame*/
+.Clock {
+    margin: 10px 20px;
+}
+
+.atomic_img1 {
+    margin-bottom: 9px;
+}
+
+.quartz_khung_img {
+    padding-left: 0px;
+    width: 956px;
+}
+
+.quartz_khung_img_chung {
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.quartz_khung_text {
+    padding-left: 12px;
+}
+
+/*--------------------------Store Locator Page--------------------------*/
+.store_locator_map {
+
+    margin-top: 0px;
+    margin-right: 0px;
+    overflow: hidden;
+    padding-bottom: 155px;
+    position: relative;
+    height: 0;
+}
+
+.store_locator_map iframe {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.store_locator_contents {
+    font-size: 16px;
+    color: black;
+    text-align: left;
+}
+
+.store_locator_contents i {
+    color: black;
+    text-align: left;
+}
+
+/*-------------------------------------------------------Footer Part-------------------------------------------------------*/
+footer {
+    background-color: black;
+    margin-top: 30px;
+}
+
+/*--------------------------Title--------------------------*/
+.text_topic {
+    color: white;
+    text-align: left;
+    font-size: 20px;
+}
+
+/*--------------------------The title content--------------------------*/
+.text_contents {
+    font-size: 16px;
+    color: #ccc;
+    text-align: left;
+}
+
+.text_contents span {
+    color: #ccc;
+}
+
+.text_contents span i {
+    color: #ccc;
+    font-size: 20px;
+}
+
+/*Social and Pay*/
+.text_social_and_pay {
+    text-align: center;
+    font-size: 20px;
+    color: #ccc;
+}
+
+.text_social_and_pay i {
+    font-size: 20px;
+    color: white;
+}
+
+/*--------------------------Map Part--------------------------*/
+.footer_map {
+    margin-top: 30px;
+    overflow: hidden;
+    padding-bottom: 252px;
+    position: relative;
+    height: 0;
+}
+
+.footer_map iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+/*--------------------------Copyright Part--------------------------*/
+.copyright {
+    padding-top: 10px;
+    font-size: 20px;
+    text-align: center;
+    height: auto;
+    clear: both;
+    color: white;
+    border: 1px solid rgba(59, 66, 60, 0.671);
+    background-color: rgba(59, 66, 60, 0.671);
+}
+
+/*-------------------------------------------------------Phần riêng-------------------------------------------------------*/
+/*--------------------------TopButton--------------------------*/
+.onTop {
+    display: none;
+    bottom: 10%;
+    right: 10px;
+    cursor: pointer;
+    position: fixed;
+    z-index: 1000;
+}
+
+.onTop p {
+    margin: 0;
+}
+
+.onTop div {
+    background: black;
+    color: whitesmoke;
+    border: 2px solid #fff;
+    border-radius: 40px;
+    padding: 9px 8px;
+    -webkit-box-shadow: 1px 3px 5px 0px black;
+    box-shadow: 1px 3px 5px 0px black;
+}
+
+/*--------------------------Thumbnail--------------------------*/
+/*Khung chứ thumbnail*/
+.thumbnail {
+    overflow: hidden;
+    /*thumbnail does not overflow when zoomed in*/
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    transition-duration: 0.5s;
+    /*Safari & Google Chrome*/
+    -webkit-transition-duration: 0.5s;
+    /*Mozilla Firefox*/
+    -moz-transition-duration: 0.5s;
+    /*Opera*/
+    -o-transition-duration: 0.5s;
+}
+
+/*Hover mouse over the thumbnail*/
+.thumbnail img:hover {
+    transform: scale(1.2, 1.2);
+    /*scale(x,y): Used to stretch the object*/
+    /*Safari & Google Chrome*/
+    -webkit-transform: scale(1.2);
+    /*Mozilla Firefox*/
+    -moz-transform: scale(1.2);
+    /*Opera*/
+    -o-transform: scale(1.2);
+    cursor: pointer;
+}
+
+/*--------------------------Zoom Image--------------------------*/
+div.zoom {
+    background-position: 50% 50%;
+    position: relative;
+    width: 500px;
+    overflow: hidden;
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in;
+}
+
+div.zoom img:hover {
+    opacity: 0;
+}
+
+div.zoom img {
+    -webkit-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+    display: block;
+    width: 100%;
+}

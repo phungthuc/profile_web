@@ -1,0 +1,226 @@
+
+/*** 
+=============================================
+    About Style1 Area Css   
+=============================================
+***/
+.about-style1-area{
+    position: relative;
+    display: block;
+    padding: 150px 0 150px;
+    background: #ffffff;
+}
+.about-style1-area .round-shape {
+    position: absolute;
+    top: -700px;
+    right: -100px;
+}
+.about-style1-area .round-shape img{
+    width: auto;
+}
+
+.about-style1__image1{
+    position: relative;
+    display: block;
+    max-width: 530px;
+    width: 100%;
+    padding-right: 60px;
+    padding-bottom: 70px;
+}
+.about-style1__image1 .inner{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 20px;
+    z-index: 2;
+}
+.about-style1__image1 .inner .inner-box{
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.about-style1__image1 .inner img{
+    width: 100%;
+}
+.about-style1__image1 .content-box{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    background: var(--thm-base);
+    border-radius: 20px;
+    padding: 39px 35px 38px;
+    z-index: 2;
+}
+.about-style1__image1 .content-box h3{
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 600;
+}
+
+
+
+
+.about-style1__content {
+    position: relative;
+    display: block;
+    padding-left: 40px;
+    z-index: 2;
+}
+.about-style1__content .sec-title{
+    padding-bottom: 34px;
+}
+.about-style1__content .inner-content{
+    position: relative;
+    display: block;
+}
+.about-style1__content .inner-content .bottom-box{
+    position: relative;
+    display: block;
+    padding-top: 35px;
+}
+
+.our-achive-box-single{
+    position: relative;
+    display: block;
+}
+.our-achive-box-single .icon{
+    position: relative;
+    display: block;
+}
+.our-achive-box-single .icon span:before{
+    color: var(--thm-base);
+    font-size: 60px;
+    line-height: 60px;
+}
+
+.our-achive-box-single h3{
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 600;
+    margin: 12px 0 14px;
+}
+.our-achive-box-single p{
+    font-size: 18px;
+    margin: 0;
+}
+
+
+
+/*** 
+=============================================
+    About Style2 Area Css   
+=============================================
+***/
+.about-style2-area{
+    position: relative;
+    display: block;
+    padding: 150px 0 150px;
+    background: #ffffff;
+}
+.about-style2-area .round-shape-box {
+    position: absolute;
+    top: -1200px;
+    left: 0;
+}
+.about-style2-area .shape-round-box2 {
+    position: absolute;
+    top: -550px;
+    left: -100px;
+    opacity: 0.20;
+}
+
+
+.about-style2-area.pdtop0{
+    padding-top: 0;
+}
+.about-style2__image-box{
+    position: relative;
+    display: block;
+    padding-left: 110px;
+    padding-right: 50px;
+    max-width: 530px;
+    width: 100%;
+    z-index: 11;
+}
+.about-style2__image-box .inner{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.about-style2__image-box .inner img{
+    width: 100%;
+    transform: scale(1.1) rotate(1deg);
+}
+.about-style2__image-box:hover .inner img{
+    transform: scale(1.0) rotate(0deg);
+}
+
+.about-style2__image-box .content-box {
+    position: absolute;
+    left: 0;
+    bottom: 60px;
+    width: 250px;
+    height: 290px;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 40px 40px 40px;
+    box-shadow: -12.856px 15.321px 70px 0px rgba(26, 46, 85, 0.2);
+}
+.about-style2__image-box .content-box span:before{
+    position: relative;
+    display: block;
+    color: var(--thm-base);
+    font-size: 60px;
+    line-height: 60px;
+}
+.about-style2__image-box .content-box h3{
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 600;
+    margin: 24px 0 19px;
+}
+.about-style2__image-box .content-box p{
+    font-size: 18px;
+    margin: 0;
+}
+
+.about-style2__image-box .icon-holder{
+    position: absolute;
+    top: 120px;
+    right: 0;
+    width: 120px;
+    height: 120px;
+    background: var(--thm-base);
+    border-radius: 20px;
+    box-shadow: 12.856px 15.321px 70px 0px rgba(26, 46, 85, 0.2);
+}
+.about-style2__image-box .icon-holder span:before{
+    position: relative;
+    display: block;
+    color: #ffffff;
+    font-size: 60px;
+    line-height: 120px;
+    text-align: center;
+}
+
+
+.about-style1__content--style2{
+    position: relative;
+    display: block;
+    padding-top: 60px;
+    padding-left: 40px;
+    z-index: 11;
+}
+.about-style1__content--style2 .bottom-box{
+    position: relative;
+    display: block;
+}
+.about-style1__content--style2 .bottom-box .btns-box{
+    position: relative;
+    display: block;
+    line-height: 0;
+}
+

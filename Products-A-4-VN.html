@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aura Embossed Watch - VN - A4</title>
+    <link rel="stylesheet" href="./css/bootstrap_4.3.1_css_bootstrap.min.css">
+    <!--Library reference: Slide-->
+    <link rel="stylesheet" href="./css/animate.css_v3.1.0_animate.min.css">
+    <!--Library reference: icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <!--layout design-->
+    <link rel="stylesheet" href="./css/Layout.css">
+    <!--Library reference: Slide-->
+    <script src="./JavaScript And Jquery And Bootstrap/WOW_1.0.1_dist_wow.min.js"></script>
+    <!--Library reference: required-->
+    <script src="./JavaScript And Jquery And Bootstrap/jquery_3.4.1_jquery.min.js"></script>
+    <!--Library reference: required-->
+    <script src="./JavaScript And Jquery And Bootstrap/jav_1.14.7_umd_popper.min.js"></script>
+    <!--Library reference: required-->
+    <script src="./JavaScript And Jquery And Bootstrap/bootstrap_4.3.1_js_bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!------------------------------------------------------Language and Sign in------------------------------------------------------>
+        <div class="row" style="margin: 20px;">
+            <!--Language-->
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+                <button class="btn btn-light" type="button" id="dropdownMenuButton">
+                    <img src="./Image/homepage/2.svg" alt="" width="15px"><a href="./0.Welcome.html"> Việt Nam</a>
+                </button>
+            </div>
+            <!--Sign in-->
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+                <button id="myBtn" class="btn btn-light sign_in">Đăng Nhập</button>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="myModal" class="modal" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <div class="modal_text">
+                                            <p class="modal_p">Đăng Nhập Tài Khoản</p>
+                                        </div>
+                                    </div>
+                                    <form action="" class="modal_f" onsubmit="return sign_in()">
+                                        <div class="form-group">
+                                            <input class="Modal_Input form-control" type="text" value=""
+                                                style="margin-top: 10px; margin-bottom: 10px;"
+                                                placeholder="Enter Your Email" id="myEmail" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="Modal_Input form-control" type="password" value=""
+                                                style="margin-top: 10px; margin-bottom: 10px;"
+                                                placeholder="Enter Your Password" id="myPass" required>
+                                        </div>
+                                        <div class="form-inline justify-content-center">
+                                            <button type="submit" id="btnLogin"
+                                                class="Modal_click form-control btn btn-light modal_input">Đăng
+                                                Nhập</button>
+                                            <a href="./6.Register.html" style="margin-left: 30px; margin-right: 30px;">
+                                                <button class="Modal_click form-control btn btn-light modal_input"
+                                                    type="button" id="myRegistration">Đăng Ký</button></a>
+                                            <button id="myBtnClose"
+                                                class="Modal_click form-control btn btn-light modal_input"
+                                                type="button">Đóng</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------------------------------------------------Menu and Logo------------------------------------------------------>
+        <!--logo-->
+        <div id="row-2-logo" class="row" style="height: 50px;">
+            <div class="col-xl-12" style="text-align: center;">
+                <a href="./1.Index-VN.html"><img src="./Image/general/logo.png"></a>
+            </div>
+        </div>
+        <!--menu-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" style="margin-top: 80px;">
+            <button id="btn-nav" class="navbar-toggle" type="button" data-toggle="collapse"
+                data-target="#collapse1">&#9776;</button>
+            <div class="collapse navbar-collapse" id="collapse1">
+                <ul class="navbar-nav">
+                    <li class="nav-item" style="padding-right: 30px;padding-left: 30px;"><a class="nav-link "
+                            href="./1.Index-VN.html">Trang Chủ</a>
+                    </li>
+                    <li class="nav-item dropdown product-nav" style="padding-right: 30px;padding-left: 30px;">
+                        <a class="nav-link dropdown-toggle active" href="./2.Products-VN.html">Sản Phẩm</a>
+                        <ul class="dropdown-menu">
+                            <!--Products Quartz-->
+                            <li class="dropright">
+                                <a class="dropdown-toggle" href="./2.Products-VN.html">Đồng Hồ
+                                    Pin</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item"><a href="./Products-Q-1-VN.html">Aura
+                                            White Watch</a></li>
+                                    <li class="dropdown-item"><a href="./Products-Q-2-VN.html">Aura
+                                            Embossed Watch</a></li>
+                                    <li class="dropdown-item"><a href="./Products-Q-3-VN.html">Antique
+                                            Flower Watch</a></li>
+                                    <li class="dropdown-item"><a href="./Products-Q-4-VN.html">Aura
+                                            Embossed Watch</a></li>
+                                </ul>
+                            </li>
+                            <!--Products Eco-Drive-->
+                            <li class="dropright">
+                                <a class="dropdown-toggle" href="./2.Products-VN.html">Đồng Hồ Năng Lượng</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item"><a href="./Products-W-1-VN.html">Aura
+                                            White Acrylic Watch</a></li>
+                                    <li class="dropdown-item"><a href="./Products-W-2-VN.html">Butterfly
+                                            Dial Watch</a></li>
+                                    <li class="dropdown-item"><a href="./Products-W-3-VN.html">Aura
+                                            Stardust Watch</a></li>
+                                    <li class="dropdown-item"><a href="./Products-W-4-VN.html">Silver
+                                            Tone Watch</a></li>
+                                </ul>
+                            </li>
+                            <!--Products Automatic-->
+                            <li class="dropright ">
+                                <a class="dropdown-toggle" href="./2.Products-VN.html">Đồng Hồ Cơ</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item"><a href="./Products-A-1-VN.html">Aura
+                                            Glitter Watch</a></li>
+                                    <li class="dropdown-item"><a href="./Products-A-2-VN.html">Aura
+                                            Rose Tone Watch Set</a></li>
+                                    <li class="dropdown-item"><a href="./Products-A-3-VN.html">Aura
+                                            White Acrylic Watch</a></li>
+                                    <li class="dropdown-item"><a href="./Products-A-4-VN.html">Aura
+                                            Embossed Watch</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item" style="padding-right: 30px;padding-left: 30px;"><a
+                            href="./3.Technology-VN.html" class="nav-link">Công Nghệ</a></li>
+                    <li class="nav-item" style="padding-right: 30px;padding-left: 30px;"><a
+                            href="./4.Store_Locator-VN.html" class="nav-link">Định Vị Cửa Hàng</a></li>
+                    <li class="nav-item" style="padding-right: 30px;padding-left: 30px;"><a href="./5.Support-VN.html"
+                            class="nav-link">Hỗ Trợ</a></li>
+                    <li class="nav-item" style="padding-right: 30px;padding-left: 30px;"><a href="./6.Register-VN.html"
+                            class="nav-link">Đăng Ký</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!------------------------------------------------------Link------------------------------------------------------>
+        <div class="container-fluid">
+            <ol class="breadcrumb Menu_Link">
+                <li class="breadcrumb-item"><a href="./1.Index-VN.html">Trang Chủ</a></li>
+                <li class="breadcrumb-item"><a href="./2.Products-VN.html">Sản Phẩm</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Aura Embossed Watch</li>
+            </ol>
+        </div>
+        <!------------------------------------------------------------Background-image------------------------------------------------------------>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-12 d-block w-100 Menu_Background_Image">
+                    <img src="./Image/general/Hoskings_Aura_banner.jpg" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <!------------------------------------------------------Contents------------------------------------------------------>
+        <div class="container-fluid">
+            <!--Main Product-->
+            <div class="container">
+                <div class="row">
+                    <!--Image-->
+                    <div class="col-md-7 col-lg-7 col-xl-7">
+                        <span class="zoom" id="ex1">
+                            <img src="./Image/products/12.png" alt="Card image cap" class="img-fluid">
+                        </span>
+                    </div>
+                    <!--Product Information-->
+                    <div class="col-md-5 col-lg-5 col-xl-5">
+                        <div>
+                            <p><b class="name_product">Aura Embossed Watch</b><br />
+                                <span class="code_product">Mã sản phẩm:A-4</span><br />
+                                <span>
+                                    <h3 class="text-info">$75.00</h3>
+                                </span><br />
+                                Hiện đại và sang trọng, chiếc đồng hồ Aura này có dây đeo bằng da màu be với vỏ thép
+                                không gỉ và mặt số tròn màu trắng với dùi cui màu bạc. Chống nước có nghĩa là chiếc đồng
+                                hồ này chống nước nhưng không bị chìm trong nước. Bảo hành 2 năm.
+                                <br />
+                                Miễn phí vận chuyển cho hoá đơn trên $99.
+                            </p>
+                        </div>
+                        <!--Add To Bag-->
+                        <div class="form-group">
+                            <button class="form-control btn btn-dark" onclick="products_line_up();">Thêm vào
+                                giỏ</button>
+                        </div>
+                        <!--View This Product In-Store-->
+                        <div id="accordion">
+                            <div class="card">
+                                <div class="card-header" id="headingStore" style="padding: 0px;">
+                                    <h5 class="mb-0">
+                                        <center>
+                                            <button class="btn btn-link shipping_ViewThisProduct" data-toggle="collapse"
+                                                data-target="#collapseStore" aria-expanded="true"
+                                                aria-controls="collapseStore">
+                                                <i class="fa fa-map-marker" aria-hidden="true"></i> Xem sản phẩm tại
+                                                cửa hàng
+                                            </button>
+                                        </center>
+                                    </h5>
+                                </div>
+                                <div id="collapseStore" class="collapse" aria-labelledby="headingStore"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p>Để xem sản phẩm này tại cửa hàng, vui lòng điền vào mẫu dưới
+                                            đây.<br>
+                                            Nhân viên của Hoskings sẽ liên lạc trong vòng 1 ngày để xác
+                                            nhận khi nào mặt hàng sẽ sẵn sàng để xem.</p>
+                                        <form action="#" onsubmit="return products()">
+                                            <div class="form-group">
+                                                <lable>Họ*</lable>
+                                                <input type="text" class="form-control" id="firstName" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <lable>Tên*</lable>
+                                                <input type="text" class="form-control" id="lastName" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <lable>Email*</lable>
+                                                <input type="text" class="form-control" id="email_my" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <lable>Số điện thoại*</lable>
+                                                <input type="text" class="form-control" id="myPhone" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <lable>Ghi chú</lable>
+                                                <textarea name="myAI" id="AI" class="form-control"></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <button type="submit" class="form-control btn btn-info">Gửi</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Description-->
+                        <div id="accordion" style="margin-top: 10px; margin-bottom: 10px;">
+                            <div class="card">
+                                <div class="card-header" id="headingtext" style="padding: 0px;">
+                                    <h5 class="mb-0">
+                                        <center>
+                                            <button class="btn btn-link shipping_ViewThisProduct" data-toggle="collapse"
+                                                data-target="#collapsetext" aria-expanded="true"
+                                                aria-controls="collapsetext">
+                                                Vận chuyển
+                                            </button></center>
+                                    </h5>
+                                </div>
+                                <div id="collapsetext" class="collapse" aria-labelledby="headingtext"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        Miễn phí vận chuyển cho hoá đơn trên $99.<br>
+                                        Hoá đơn dưới 99$ sẽ có phí vận chuyển là 10$.<br><br>
+                                        Mục tiêu của chúng tôi là gửi tất cả các đơn đặt hàng trong vòng 3 - 5 ngày làm
+                                        việc. Khi đơn hàng đã được chuyển đi, vui lòng chờ 2 - 5 ngày làm việc để giao
+                                        hàng tùy theo địa điểm của bạn.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--download-->
+                        <div class="form-group">
+                            <a href="./download/A-1-Aura Glitter Watch.rar"><button
+                                    class="form-control btn btn-dark">Tải về</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--equivalent products-->
+            <div style="text-align: center;">
+                <h2>Sản phẩm tương đương</h2>
+            </div>
+            <center>
+                <hr width="50%">
+            </center>
+            <div class="row justify-content-md-center">
+                <!--equivalent products 1-->
+                <div class="col-md-2 col-lg-2 col-xl-2">
+                    <div class="card">
+                        <div class="thumbnail"><a href="./Products-A-1.html"><img class="card-img-top"
+                                    src="./Image/products/9.png" alt="Card image cap"></div>
+                        </a>
+                        <div class="card-body" style="padding-bottom: 45px;">
+                            <p class="card-text"><b>Aura Glitter Watch</b><br />
+                                <span class="code_product">CODE:A-1</span>
+                                <br /> <span class="text-info">$57.50</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!--equivalent products 2-->
+                <div class="col-md-2 col-lg-2 col-xl-2">
+                    <div class="card">
+                        <div class="thumbnail"><a href="./Products-A-2.html"><img class="card-img-top"
+                                    src="./Image/products/10.png" alt="Card image cap"></a></div>
+
+                        <div class="card-body">
+                            <p class="card-text"><b>Aura Rose Tone Watch Set</b><br />
+                                <span class="code_product">CODE:A-2</span>
+                                <br /> <span class="text-info">$69.00</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!--equivalent products 3-->
+                <div class="col-md-2 col-lg-2 col-xl-2">
+                    <div class="card">
+                        <div class="thumbnail"><a href="./Products-A-3.html"><img class="card-img-top"
+                                    src="./Image/products/11.png" alt="Card image cap"></div>
+                        </a>
+                        <div class="card-body">
+                            <p class="card-text"><b>Aura White Acrylic Watch</b><br />
+                                <span class="code_product">CODE:A-3</span>
+
+                                <br /> <span class="text-info">$74.50</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!--equivalent products 4-->
+                <div class="col-md-2 col-lg-2 col-xl-2">
+                    <div class="card">
+                        <div class="thumbnail"><a href="./Products-A-4.html"><img class="card-img-top"
+                                    src="./Image/products/12.png" alt="Card image cap"></div>
+                        </a>
+                        <div class="card-body">
+                            <p class="card-text"><b>Aura Embossed Watch</b><br />
+                                <span class="code_product">CODE:A-4</span>
+                                <br /> <span class="text-info">$87.50</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------------------------------------------------TopButton------------------------------------------------------>
+        <div class='onTop'>
+            <div>
+                <p>TOP</p>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="container-fluid" style="padding-bottom:30px;">
+        <div class="row">
+            <div class="col-xl-6">
+                <div class="row" style="margin: 30px 10px;">
+                    <!--Footer Menu-->
+                    <div class="col-xl-3">
+                        <p class="text_topic">Menu</p>
+                        <hr width="30%" align="left" color="#ccc">
+                        <p class="text_contents"><a href="./1.Index-VN.html"><span>Trang Chủ</span></a><br>
+                            <a href="./2.Products-VN.html"><span>Sản Phẩm</span></a><br>
+                            <a href="./3.Technology-VN.html"><span>Công Nghệ</span></a><br>
+                            <a href="./4.Store_Locator-VN.html"><span>Định Vị Cửa Hàng</span></a><br>
+                            <a href="./5.Support-VN.html"><span>Hỗ Trợ</span></a><br>
+                            <a href="./6.Register-VN.html"><span>Đăng Ký</span></a></p>
+                    </div>
+                    <!--Footer Openning time-->
+                    <div class="col-xl-4">
+                        <p class="text_topic">Giờ Mở Cửa<br></p>
+                        <hr width="30%" align="left" color="#ccc">
+                        <p class="text_contents"><span>Thứ 2: 09:00-17:00</span><br>
+                            <span>Thứ 3: 09:00-17:00</span><br>
+                            <span>Thứ 4: 09:00-17:00</span><br>
+                            <span>Thứ 5: 09:00-17:00</span><br>
+                            <span>Thứ 6: 09:00-17:00</span><br>
+                            <span>Thứ 7: 09:00-20:00</span><br>
+                            <span>Chủ Nhật: 09:00-20:00</span></p>
+                    </div>
+                    <!--Address-->
+                    <div class="col-xl-5">
+                        <p class="text_topic">Thông Tin Cửa Hàng</p>
+                        <hr width="30%" align="left" color="#ccc">
+                        <p class="text_contents"><span><i class="fa fa-home" aria-hidden="true"></i></span> P.IVA
+                            01208150258, <br>Belluno 32100
+                            Italy</p>
+                        <p class="text_contents"><span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                            123-123-1234567</p>
+                        <p class="text_contents"><span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                            aurawatch@gmail.com</p>
+                    </div>
+                </div>
+                <div class="row" style=" margin-top: 80px;">
+                    <div class="col text_social_and_pay">
+                        <p>
+                            Mạng Xã Hội:
+                            <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-google" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-drupal" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                        </p>
+                    </div>
+                    <div class="col text_social_and_pay">
+                        <p>
+                            Thanh Toán:
+                            <a href="#"><i class="fa fa-cc-visa" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-credit-card-alt" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-cc-stripe" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-money" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-cc-jcb" aria-hidden="true"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <!--Map-->
+                <div class="row">
+                    <div class="col">
+                        <div class="footer_map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.1441076563633!2d106.67385271425717!3d10.87664206031137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529d2e3779ec3%3A0xdc988d109d58efd8!2zSOG7pyBUaeG6v3UgTcOsIEhvw6BuaCBUaMOhbmggVMOgaSBLw70!5e0!3m2!1svi!2s!4v1571969812583!5m2!1svi!2s"
+                                width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        </div>
+                    </div>
+                </div>
+                <!--Subcribe-->
+                <div class="row">
+                    <div class="col">
+                        <p style="color: white; font-size: 20px; text-align: center;">Đăng Ký Nhận Bản Tin</p>
+                        <p style="color: #ccc; font-size: 16px; text-align: center;">Theo dõi bản tin của chúng tôi để
+                            nhận thông tin mới nhất về sản phẩm mới và chiến dịch quảng cáo của chúng tôi.</p>
+                    </div>
+                </div>
+                <!--Support-->
+                <div class="row justify-content-md-center">
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <input type="email" class="form-control" value="" placeholder="Vui Lòng Nhập Email"
+                                size="40" id="my_email" />
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="form-control btn btn-info" value="Gửi Email" id="my_submit" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Copyright-->
+    <div class="container-fluid">
+        <div class="row copyright">
+            <div class="col-xl-12">
+                <p>Bản quyền &copy; 2019 Aura Watch. Tất cả quyền được bảo lưu</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--Javascript made by team-->
+<script src="./JavaScript And Jquery And Bootstrap/javascript_test.js"></script>
+<script src="./JavaScript And Jquery And Bootstrap/jquery_showroom_and_button_top.js"></script>
+
+</html>
