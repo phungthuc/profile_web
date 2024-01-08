@@ -13,7 +13,7 @@ body {
   color: #272829;
 }
 
-.sshow{
+.sshow {
   color: #0563bb;
   text-decoration: none;
   cursor: pointer;
@@ -285,7 +285,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top right no-repeat;
+  background: url("../img/hero-bg.jpg") top no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -1240,45 +1240,43 @@ table {
 }
 /* Download button */
 #classmodal {
-    background-color: #5c636a;
-    border-radius: 50px;
-    border-width: 0;
-    box-shadow: rgba(0, 0, 0, 0.1) 0 -25px 18px -14px inset, #eef7ff 0 1px 2px,
-      #eef7ff 0 2px 4px, #eef7ff 0 4px 8px, #eef7ff 0 8px 16px,
-      #eef7ff 0 16px 32px;
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
-    font-family: CerebriSans-Regular, -apple-system, BlinkMacSystemFont, Roboto,
-      sans-serif;
-    line-height: 16px;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    transition: all 200ms;
-  }
-  
-  
-   #submitpass {
-    background-color: #3c6ae7;
-    border-radius: 50px;
-    border-width: 0;
-    box-shadow: rgba(0, 0, 0, 0.1) 0 -25px 18px -14px inset, #eef7ff 0 1px 2px,
-      #eef7ff 0 2px 4px, #eef7ff 0 4px 8px, #eef7ff 0 8px 16px,
-      #eef7ff 0 16px 32px;
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
-    font-family: CerebriSans-Regular, -apple-system, BlinkMacSystemFont, Roboto,
-      sans-serif;
-    line-height: 16px;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    transition: all 200ms;
-  }
-  
-  
+  background-color: #5c636a;
+  border-radius: 50px;
+  border-width: 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 -25px 18px -14px inset, #eef7ff 0 1px 2px,
+    #eef7ff 0 2px 4px, #eef7ff 0 4px 8px, #eef7ff 0 8px 16px,
+    #eef7ff 0 16px 32px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular, -apple-system, BlinkMacSystemFont, Roboto,
+    sans-serif;
+  line-height: 16px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 200ms;
+}
+
+#submitpass {
+  background-color: #3c6ae7;
+  border-radius: 50px;
+  border-width: 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 -25px 18px -14px inset, #eef7ff 0 1px 2px,
+    #eef7ff 0 2px 4px, #eef7ff 0 4px 8px, #eef7ff 0 8px 16px,
+    #eef7ff 0 16px 32px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular, -apple-system, BlinkMacSystemFont, Roboto,
+    sans-serif;
+  line-height: 16px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 200ms;
+}
+
 #download {
   background-color: #3c6ae7;
   border-radius: 50px;
