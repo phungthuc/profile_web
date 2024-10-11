@@ -36,7 +36,7 @@
 						div.html( text_close.replace('%s',time) ); 
 						if( time <= 0 ){
 							clearInterval( timer );
-							$.magnificPopup.close();
+							// $.magnificPopup.close();
 						}
 					}, 1000 );
 				}
@@ -55,13 +55,13 @@
 				return false;
  			} );
 
- 			$.magnificPopup.open({
-			  	items: {
-				    src: container,
-				    type: 'inline',
-				    width:"900"
-				 },
-			});
+ 			// $.magnificPopup.open({
+			//   	items: {
+			// 	    src: container,
+			// 	    type: 'inline',
+			// 	    width:"900"
+			// 	 },
+			// });
 		},
 
  		this.setCookie = function ( cname, cvalue, exdays ) {
