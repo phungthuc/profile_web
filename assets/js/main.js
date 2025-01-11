@@ -33,8 +33,8 @@
    * Easy on scroll event listener
    */
   const onscroll = (el, listener) => {
-    el.addEventListener('scroll', listener);
-  }
+    el.addEventListener('scroll', listener, { passive: true });
+  };
 
   /**
    * Navbar links active state on scroll
@@ -242,6 +242,10 @@
       mirror: false
     });
   });
+
+  document.addEventListener('touchmove', (e) => {
+  }, { passive: true });
+
 
   window.onload = function () {
     window.scrollTo(0, 0);
