@@ -11,7 +11,7 @@ function changeVN(){
       "strongphone"     : "Điện thoại:",
       "strongstatus"    : "Tình trạng hôn nhân:",
       "strongcity"      : "Thành phố:",
-      "strongdegree"    : "Bằng cấp:",
+      "strongdegree"    : "Nơi làm việc:",
       "strongcareer"    : "Mục tiêu nghề nghiệp:",
       "strongdownload"  : "Tải CV",
       "h4location"      : "Địa chỉ",
@@ -20,6 +20,7 @@ function changeVN(){
       "first_carrer" : "Phát triển và đóng góp vào các sản phẩm trò chơi chất lượng cao nhằm nâng cao trải nghiệm người dùng.",
       "second_carrer" : "Liên tục cải thiện kỹ năng của mình bằng cách viết mã sạch, hiệu quả và hiệu suất cao.",
       "third_carrer" : "Cập nhật với công nghệ mới và áp dụng chúng để tạo ra những trò chơi sáng tạo và hấp dẫn.",
+      "strongtotalproject" : "Tổng số dự án đã hoàn thành:",
     };
     $('#spanabout').text(arrayLang.h2about)
     $('#spanwork').text(arrayLang.h2work)
@@ -39,6 +40,7 @@ function changeVN(){
     $('#phone').text(arrayLang.strongphone)
     $('#city').text(arrayLang.strongcity)
     $('#degree').text(arrayLang.strongdegree)
+    $('#total-project').text(arrayLang.strongtotalproject)
     $('#career').text(arrayLang.strongcareer)
     $('#status').text(arrayLang.strongstatus)
     $('button#download').text(arrayLang.strongdownload)

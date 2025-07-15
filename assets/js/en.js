@@ -11,7 +11,7 @@ function changeEN(){
       "strongphone"     : "Phone:",
       "strongstatus"    : "Marital status:",
       "strongcity"      : "City:",
-      "strongdegree"    : "Degree:",
+      "strongdegree"    : "Workplace:",
       "strongcareer"    : "Career Objective:",
       "strongdownload"  : "Download CV",
       "h4location"      : "Location",
@@ -24,6 +24,7 @@ function changeEN(){
       "first_carrer" : "Develop and contribute to high-quality game productions that enhance user experience.",
       "second_carrer" : "Continuously improve my skills by writing clean, efficient, and high-performance code.",
       "third_carrer" : "Stay up to date with new technologies and apply them to create innovative and engaging games.",
+      "strongtotalproject" : "Total Projects Completed:",
             };
     $('#spanabout').text(arrayLang.h2about)
     $('#spanwork').text(arrayLang.h2work)
@@ -43,6 +44,7 @@ function changeEN(){
     $('#phone').text(arrayLang.strongphone)
     $('#city').text(arrayLang.strongcity)
     $('#degree').text(arrayLang.strongdegree)
+    $('#total-project').text(arrayLang.strongtotalproject)
     $('#career').text(arrayLang.strongcareer)
     $('#status').text(arrayLang.strongstatus)
     $('button#download').text(arrayLang.strongdownload)

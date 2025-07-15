@@ -3,7 +3,8 @@ body {
     color: #272829
 }
 
-body, html{
+body,
+html {
     -webkit-overflow-scrolling: touch;
 }
 
@@ -1240,4 +1241,42 @@ table {
     font-family: CerebriSans-Regular, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
     line-height: 16px;
     text-align: center
+}
+
+.resume-item {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-left: 4px solid #6c63ff;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.project-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.project-duration {
+    font-size: 0.95rem;
+    color: #777;
+}
+
+.project-summary {
+    font-style: italic;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.project-responsibilities ul {
+    padding-left: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.project-responsibilities li {
+    margin-bottom: 0.4rem;
+}
+
+.red-text {
+    color: #ff0000 !important;
 }
