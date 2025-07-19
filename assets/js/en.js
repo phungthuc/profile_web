@@ -11,7 +11,8 @@ function changeEN(){
       "strongphone"     : "Phone:",
       "strongstatus"    : "Marital status:",
       "strongcity"      : "City:",
-      "strongdegree"    : "Workplace:",
+      "strongoldcompany"    : "Old Company:",
+      "strongcurrentcompany"    : "Current Company:",
       "strongcareer"    : "Career Objective:",
       "strongdownload"  : "Download CV",
       "h4location"      : "Location",
@@ -43,7 +44,8 @@ function changeEN(){
     $('#website').text(arrayLang.strongwebsite)
     $('#phone').text(arrayLang.strongphone)
     $('#city').text(arrayLang.strongcity)
-    $('#degree').text(arrayLang.strongdegree)
+    $('#old-company').text(arrayLang.strongoldcompany)
+    $('#current-company').text(arrayLang.strongcurrentcompany)
     $('#total-project').text(arrayLang.strongtotalproject)
     $('#career').text(arrayLang.strongcareer)
     $('#status').text(arrayLang.strongstatus)

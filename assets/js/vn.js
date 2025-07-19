@@ -11,7 +11,8 @@ function changeVN(){
       "strongphone"     : "Điện thoại:",
       "strongstatus"    : "Tình trạng hôn nhân:",
       "strongcity"      : "Thành phố:",
-      "strongdegree"    : "Nơi làm việc:",
+      "strongoldcompany"    : "Nơi làm việc cũ:",
+      "strongcurrentcompany"    : "Nơi làm việc hiện tại:",
       "strongcareer"    : "Mục tiêu nghề nghiệp:",
       "strongdownload"  : "Tải CV",
       "h4location"      : "Địa chỉ",
@@ -39,7 +40,8 @@ function changeVN(){
     $('#website').text(arrayLang.strongwebsite)
     $('#phone').text(arrayLang.strongphone)
     $('#city').text(arrayLang.strongcity)
-    $('#degree').text(arrayLang.strongdegree)
+    $('#old-company').text(arrayLang.strongoldcompany)
+    $('#current-company').text(arrayLang.strongcurrentcompany)
     $('#total-project').text(arrayLang.strongtotalproject)
     $('#career').text(arrayLang.strongcareer)
     $('#status').text(arrayLang.strongstatus)

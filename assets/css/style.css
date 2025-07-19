@@ -411,6 +411,17 @@ section {
     line-height: 0
 }
 
+.about .content ul span a {
+    color: #0563bb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.about .content ul span a:hover {
+    color: #067ded;
+    text-decoration: underline;
+}
+
 .about .content p:last-child {
     margin-bottom: 0
 }
@@ -493,6 +504,26 @@ section {
     margin-top: 20px;
     margin-bottom: 20px;
     color: #45505b
+}
+
+.resume .resume-partner {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #45505b;
+    font-style: italic;
+}
+
+.resume .resume-partner a {
+    color: #0563bb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.resume .resume-partner a:hover {
+    color: #067ded;
+    text-decoration: underline;
 }
 
 .resume .resume-item {
