@@ -17,7 +17,7 @@ function changeEN(){
       "strongdownload"  : "Download CV",
       "h4location"      : "Location",
       "h4call"          : "Call",
-      "about_description": `"Hi! I'm a Game Developer with 2 years of experience in both product development and outsourcing.
+      "about_description": `"Hi! I'm a Game Developer with over 2 years of experience in both product development and outsourcing.
 
               I have developed Unity games with over 1M+ downloads and have extensive experience in H5 game development using PlayCanvas and PixiJS. I have also created playable ads for well-known titles like Alien Invasion, Angry Birds Dream Blast, and MARVEL Strike Force.
               
