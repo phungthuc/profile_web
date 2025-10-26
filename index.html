@@ -123,6 +123,10 @@
        gtag('js', new Date());
        gtag('config', 'G-Q1QP89J75T');
      </script>
+     
+     <!-- Firebase SDK -->
+     <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics-compat.js"></script>
   </head>
 
   <body>
@@ -188,7 +192,7 @@
             class="facebook"
             ><i class="bx bxl-facebook"></i
           ></a>
-          <a href="https://github.com/phungthuc" class="github"
+          <a href="https://github.com/phungthuc" class="github" target="_blank"
             ><i class="bx bxl-github"></i
           ></a>
           <a href="mailto:phungthuc39@gmail.com" class="google-mail"
@@ -197,6 +201,7 @@
           <a
             href="https://www.linkedin.com/in/th%E1%BB%B1c-ph%C3%B9ng-95268b20a/"
             class="linkedin"
+            target="_blank"
             ><iq class="bx bxl-linkedin"></iq
           ></a>
         </div>
@@ -248,7 +253,7 @@
                     <li>
                       <i class="bi bi-chevron-right"></i>
                       <strong id="website">Website:</strong>
-                      <a href="https://phungthuc.github.io/profile_web/">
+                      <a href="https://phungthuc.github.io/profile_web/" target="_blank">
                         <span>https://thucphungvan.com/</span></a
                       >
                     </li>
@@ -1340,6 +1345,11 @@
     <script src="assets/vendor/typed.js/typed.min.js"></script>
     <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- Firebase Configuration and Tracking -->
+    <script src="assets/js/firebase-config.js"></script>
+    <script src="assets/js/firebase-tracking.js"></script>
+    
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/vn.js"></script>
@@ -1356,6 +1366,7 @@
               "assets/css/style.css?v=3"
             );
             var vn = changeEN();
+            trackLanguageToggle('English');
           } else {
             $(this).attr("data-click-state", 1);
             $('link[href="assets/css/style.css?v=3"]').attr(
@@ -1363,6 +1374,7 @@
               "assets/css/stylemode.css?v=4"
             );
             var vn = changeVN();
+            trackLanguageToggle('Vietnamese');
           }
         });
       });
