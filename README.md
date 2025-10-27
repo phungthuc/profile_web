@@ -16,3 +16,6 @@ https://thucphungvan.com/
 - Bootstrap Icons
 - AOS (Animate On Scroll)
 - jQuery
+
+## Firebase Deploy
+Run "firebase deploy --only hosting"
